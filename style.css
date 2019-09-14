@@ -1,0 +1,107 @@
+/*StyleSheet for Group Case Study*/
+
+*:focus {
+    outline-color: black;
+}
+
+/*Nav bar style*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #2e86ab;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #1b512d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #1b512d;
+  color: white;
+}
+
+h1 {
+    text-align: center;
+    font-style: "Times New Roman";
+    font-size: 60px;
+    background-color: #2e86ab;
+}
+
+h2 {
+    font-family:"Times New Roman";
+    font-size:40px
+}
+
+h3 {
+    font-family: "Times New Roman";
+    font-size: 30px;
+    margin: 5px;
+}
+
+a {
+    font-family: "Arial";
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-family: "Arial";
+    font-size: 18px;
+    margin: 15px;
+}
+
+body {
+    background-color: #f2f4f3;
+}
+
+article {
+    text-align: right;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #759aab;
+    background-color: #759aab;
+}
+
+.article {
+    text-decoration: none;
+    color: white;
+}
+{
+  background-image: url('http.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right top;
+}
+
+#http {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: left;
+  background-image: url('http.jpeg');
+  background-repeat: no-repeat;
+  background-attachment:inherit;
+  background-position: right top;
+}
+#www {
+  padding: 10px;
+  text-align: right;
+  background-color: #759aab;
+}
+#rr {
+  padding: 10px;
+  text-align: left;
+}

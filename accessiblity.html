@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <title>Accessibilty - World of Web Design</title>
+
+        <script src="modernizr.custom.05819.js"></script>
+
+    </head>
+    <body>
+        <h1>World of Web Design</h1>
+
+        <div class="topnav">
+            <a href="index.html" tabindex="0">Home</a>
+            <a class="#httpbasics" href="httpbasics.html" tabindex="0">HTTP Basics</a>
+            <a class="active" href="accessiblity.html" tabindex="0">Accessibilty</a>
+            <a class="#response" href="Responsiveness.html" tabindex="0">Responsiveness</a>
+        </div>
+
+        <h2 tabindex="0">Accessibility</h2>
+
+        <p>
+            Accessibility is a necessity when creating a professional and functioning website. Having your website be accessable means that
+            no matter a person's disability they should be able to navigate and use your website as well as any able-bodied person would.
+            This includes but not limited to: making sure the website works well when using s screen reader, using colors that colorblind
+            people can understand, and making use of certain attibutes to your tags so people with low motor skills can still navigate your website.
+        </p>
+        <p>
+            Below you will see more indepth ways to make your website accessible to all.
+        </p>
+
+        <article>
+            <h3 tabindex="0">Use Proper Alt Tags on All of Your Images</h3>
+            <p>
+                For those who are vision impaired and have to rely on a screen reader to navigate the website, alt tags are a must. <br />They are what are read
+                by the screen reader to the user. So make sure to use descriptive language in your alt, so people will understand what the image is. <br /> Also when
+                the image fails to load the alt is what is displayed instead. So there is no reason not to use it.
+            </p>
+
+            <h3 tabindex="0">Give Your Links Descriptive Names</h3>
+            <p>
+                For those who rely on screen readers, links are seperate from the rest of the page. <br /> Without the context of surrounding words, links that just say,
+                "Click me" have no meaning to those that use screen readers. <br /> Using short but descriptive words such as, "About Us" or "Studies on Women's Health",
+                go a long way in terms of accessibilty.
+            </p>
+
+            <h3 tabindex="0">Choosing Color Blind Friendly Colors</h3>
+            <p>
+                With approximately <a href="http://www.colourblindawareness.org/colour-blindness/" tabindex="0">300 million people in the world being color blind</a> choosing colors
+                that are friendly to color blind people isn't a choice. <br /> But with so many different types of colorblindness it would be hard to know of certain
+                if you are choosing the colors that are color blind friendly. <br /> Luckily, there are free online tools that you can use. Here is a website that
+                you can <a href="https://www.toptal.com/designers/colorfilter" tabindex="0">upload a url to see it how a colorblind person would</a>. <br /> Or if your website isn't
+                online yet you can use this site to <a href="https://www.color-blindness.com/coblis-color-blindness-simulator/" tabindex="0">upload an image see it how a colorblind
+                person would</a>.
+            </p>
+
+            <h3 tabindex="0">Make Sure The Website Can Be Navigated With a Keyboard.</h3>
+            <p>
+                Best way to check to see if your website can be navigated with your keyboard is to simply go to your website and start pressing tab.<br /> If you can't access
+                parts of the website, neither can people with low motor skills. To make the website functionable with a keyboard use the tabindex tag. <br />Setting it to -1,
+                makes it impossible to access with the tab key. Using 0 puts it in order of how the source code flows. <br />And using positive numbers puts the tab order as you set it.
+                The average user will most likely never notice it. But those who need it will be greatful for it.
+            </p>
+        </article>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
