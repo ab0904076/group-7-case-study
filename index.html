@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head lang="en" dir="ltr">
   <!--Group Project:Case Study
   Names, Colleen Clawson, Jaeyeong Lee, Ashlyn Barnhart, and Lacee Skelton.
   Date: 9/2/2019
@@ -8,7 +8,22 @@
   CIS-131-w01-->
     <link rel="stylesheet" href="style.css">
     <title>Home - World of Web Design</title>
+    <meta charset="utf-8">
+    <script>
+    var arySub= ["Javascript", "Cascading Style Sheets", "Events", "Bootstrap", "Graphics", "Facebook", "LinkedIn"];
+    function printWebSubjects(){
+      for (var i=0; i <arySub.length; i++){
+        document.write("<option onclick = 'chooseSubject(this)' value = ' " + i + " '>" + arySub[i] + "</option>");
 
+      }
+    }
+    function chooseSubject(theChoice){
+      var usrMessage = "";
+      theChoice.value < 5 ? usrMessage = "Yes, this is a topic related to web design!": usrMessage = "This is a website, but not a subject in web design.";
+      document.getElementById('subject').innerHTML = usrMessage;
+    }
+
+  </script>
   </head>
 <body>
 <h1>World of Web Design</h1>
@@ -38,5 +53,12 @@
   <button onclick="alert('An error 404 means the webpage cannot be found.')">Click Here for Answer!</button>
 <div class="functionTwo"></div>
 <script src="scripts.js"></script>
-</body>
+<h2>Related to Web Design</h2> <!--added on 9/15, to demonstrate loops and arrays-->
+<p>Is it related? Make a selection below to find out which topics related to web design.</p>
+<p id="subject">The answer will show here.</p>
+<select>
+  <script>
+  printWebSubjects();
+  </script>
+</select>
 </html>
