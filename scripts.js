@@ -3,3 +3,8 @@ var message = "<p>greetings" + " is the phrase often used by web developers in s
 function helloWorld(greetings){
   document.getElementById('functionOne').innerHTML = message;
 }
+
+
+function printImageAccess() {
+
+}
