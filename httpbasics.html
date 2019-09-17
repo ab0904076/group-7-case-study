@@ -19,6 +19,15 @@
     <p>HTTP stands for Hyper Text Transfer Protocol.</p>
     <p>WWW is about communication between web clients and servers.</p>
     <p>Communication between client computers and web servers is done by sending HTTP Requests and receiving HTTP Responses.</p>
+    <button onclick="myFunction()">More information of HTTP</button>
+    <p id="infohttp"></p>
+    <script>
+    function myFunction() {
+      var str = "HTTP";
+      var result = str.link("https://techterms.com/definition/http");
+      document.getElementById("infohttp").innerHTML = result;
+    }
+    </script>
   </article>
 
   <article id="www">
@@ -26,6 +35,15 @@
     <p>The World Wide Web is about communication between web clients and web servers.</p>
     <p>Clients are often browsers (Chrome, Edge, Safari), but they can be any type of program or device.</p>
     <p>Servers are most often computers in the cloud.</p>
+    <button onclick="myFunction()">More information of www</button>
+    <p id="infowww"></p>
+    <script>
+    function myFunction() {
+      var str = "World Wide Web";
+      var result = str.link("https://whatis.techtarget.com/definition/World-Wide-Web");
+      document.getElementById("infowww").innerHTML = result;
+    }
+    </script>
   </article>
 
   <article id="rr">
