@@ -49,13 +49,17 @@
   <article id="rr">
     <h2>HTTP Request / Response</h2>
     <p>Communication between clients and servers is done by requests and responses:</p>
-    <ol>
-      <li>A client (a browser) sends an HTTP request to the web.</li>
-      <li>An web server receives the request.</li>
-      <li>The server runs an application to process the request.</li>
-      <li>The server returns an HTTP response (output) to the browser.</li>
-      <li>The client (the browser) receives the response.</li>
-    </ol>
+
+
+    <p id="RR"></p>
+    <script>
+    var fruits = ["A client (a browser) sends an HTTP request to the web.", "An web server receives the request.", "The server runs an application to process the request.", "The server returns an HTTP response (output) to the browser.", "The client (the browser) receives the response."];
+    var f = fruits.entries();
+
+    for (x of f) {
+      document.getElementById("RR").innerHTML += x + "<br>";
+    }
+    </script>
   </article>
 </body>
 </html>
