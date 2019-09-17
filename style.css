@@ -35,7 +35,7 @@
 
 h1 {
     text-align: center;
-    font-style: "Times New Roman";
+    font-family: "Times New Roman";
     font-size: 60px;
     background-color: #2e86ab;
 }
@@ -48,6 +48,12 @@ h2 {
 h3 {
     font-family: "Times New Roman";
     font-size: 30px;
+    margin: 5px;
+}
+
+h4 {
+    font-family: "Times New Roman";
+    font-size: 25px;
     margin: 5px;
 }
 
@@ -80,12 +86,29 @@ article {
     text-decoration: none;
     color: white;
 }
-{
-  background-image: url('http.jpeg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right top;
+
+.vision_image {
+    display: inline-block;
+    margin: 15px;
+    height: 200px;
+    width: auto;
 }
+
+#vision_images {
+    display: block;
+    margin: 15px auto;
+    text-align: right;
+}
+
+/*
+    {
+        background-image: url('http.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right top;
+    }
+*/
+
 
 #http {
   margin-top: 10px;
